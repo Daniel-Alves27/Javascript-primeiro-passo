@@ -6,5 +6,7 @@ export class Clientes {
     constructor(nome,cpf){
         this.nome = nome;
         this._cpf = cpf;
+
+        this._senha = senha;
     }
 };

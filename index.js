@@ -11,9 +11,12 @@ import { sistemaDeAutenticacao } from "./SistemaDeAutenticacao.js";
 const gerente = new Gerente("Miguel",5000,11122233300);
 const diretor = new Diretor("Joao",10000,44455566601);
 gerente.cadastrarSenha("12345")
+diretor.cadastrarSenha("12345")
 
 const estaLogado = sistemaDeAutenticacao.login(gerente,"12345");
-console.log(estaLogado)
+const estaLogado2 = sistemaDeAutenticacao.login(diretor,"12345");
+const estaLogado3 = sistemaDeAutenticacao.login(Clientes,"12345");
+console.log(estaLogado,estaLogado2,estaLogado3)
 
 //________________________________
 //const cliente1 = new Clientes("Daniel",11122233309);
